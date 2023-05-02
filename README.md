@@ -18,7 +18,7 @@ The ‘action’ phase: The customer experience starts to sore in this phase, fo
 
 The ‘churn’ phase: In this phase, the customer is said to have churned. You define churn based on this phase. Also, it is important to note that at the time of prediction (i.e. the action months), this data is not available to you for prediction. Thus, after tagging churn as 1/0 based on this phase, you discard all data corresponding to this phase.
 
-# Dataset Description¶
+# Dataset Description
 1. customerID Customer ID
 2. gender Whether the customer is a male or a female
 3. SeniorCitizen Whether the customer is a senior citizen or not (1, 0)
