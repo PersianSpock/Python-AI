@@ -57,3 +57,8 @@ We created ANN using tensorflow.keras.Sequential with various optimizers and the
 
 We also did Upsampling and Downsmapling on dataset as well and at the end the best scoring belonged to Upsampling with 86%.
 
+
+# Colab Notebook
+
+https://colab.research.google.com/drive/12twa2VeJP1IL24zI3rVxQsB2hHPf9Kxo?usp=sharing
+
