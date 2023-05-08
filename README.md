@@ -46,3 +46,13 @@ The ‘churn’ phase: In this phase, the customer is said to have churned. You 
 We can see high class imbalance in data.
 Most of the numeric features are right skewed. We'll take care of this during scaling by performing MinMax Scaling, then using SMOTE.
 Most of the features have high correlation. As, first we want to build an interpretable model, we can't perform PCA as it'll change the actual features and Principal Components will not have any business interpretation. At the end, training dataset with PCA gave us lower auc-roc so in the final code we're not using PCA. We used Oversampling of minority class using SMOTE.
+
+# Classification
+
+We used XGBClassifier, LogisticRegression, LGBMClassifier, RandomForestClassifier, DecisionTreeClassifier, GradientBoostingClassifier, AdaBoostClassifier, CatBoostClassifier, and StackingClassifier of them all with the final_estimator as CatBoostClassifier since it had the best ROC_AUC Score. Also we used StructuredDataClassifier from autokeras. At the end the best scoring was for CatBoostClassifier with 85% followed by XGBClassifier with 84.5%. So we did Hyperparameters Tuning using GridSearch for them both. The best score after the tuning became 86% for CatBoostClassifier which is not that different form the original one.
+
+# Neural Network Model
+
+We created ANN using tensorflow.keras.Sequential with various optimizers and the best scoring was for: activations as 'relu' - 'relu' - 'sigmoid', Binary Cross Entropy as loss function, and Mini-batch GD as optimizer and learning rate = 0.1
+We also did Upsampling and Downsmapling on dataset as well and at the end the best scoring belonged to Upsampling with 86%.
+
