@@ -44,5 +44,5 @@ The ‘churn’ phase: In this phase, the customer is said to have churned. You 
 # EDA
 
 We can see high class imbalance in data.
-Most of the numeric features are right skewed. We'll take care of this during scaling by performing Robust Scaling, using median and quantile values.
+Most of the numeric features are right skewed. We'll take care of this during scaling by performing MinMax Scaling, then using SMOTE.
 Most of the features have high correlation. As, first we want to build an interpretable model, we can't perform PCA as it'll change the actual features and Principal Components will not have any business interpretation. At the end, training dataset with PCA gave us lower auc-roc so in the final code we're not using PCA. We used Oversampling of minority class using SMOTE.
