@@ -54,5 +54,6 @@ We used XGBClassifier, LogisticRegression, LGBMClassifier, RandomForestClassifie
 # Neural Network Model
 
 We created ANN using tensorflow.keras.Sequential with various optimizers and the best scoring was for: activations as 'relu' - 'relu' - 'sigmoid', Binary Cross Entropy as loss function, and Mini-batch GD as optimizer and learning rate = 0.1
+
 We also did Upsampling and Downsmapling on dataset as well and at the end the best scoring belonged to Upsampling with 86%.
 
