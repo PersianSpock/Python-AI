@@ -49,4 +49,4 @@ Most of the features have high correlation. As, first we want to build an interp
 
 1st Approach: We'll use RFE to reduce correlated features and then we'll build Logistic Regression model and will check VIF and p-value simultaneously to remove multicollinearity and to find statistically significant beta coefficients for identified features.
 
-2nd Approach: Then we'll try PCA and will explore Blackbox models to achieve better performance.(At the end, training dataset with PCA gave us lower auc-roc so in the final code we're not using PCA)
+2nd Approach: Then we'll try PCA and will explore Blackbox models to achieve better performance.(At the end, training dataset with PCA gave us lower auc-roc so in the final code we're not using PCA. WE used Oversampling of minority class using SMOTE)
