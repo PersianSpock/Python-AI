@@ -1,4 +1,4 @@
-# Python-AI(Project for Rayankar)
+# CHURN PREDICTION
 
 
 # Business problem overview
